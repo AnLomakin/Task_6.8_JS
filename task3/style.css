@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.trafficContainer{
+  position: absolute;
+  text-align: center;
+  top: 200px;
+  left: 800px;
+  display: block;
+  height: auto;
+  width: 150px;
+  padding: 20px;
+  border: 0.5rem solid black;
+  border-radius: 15%;
+  background-color: lightgrey;
+}
+
+.trafficLight {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: black;
+  }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-Start. 5 задача</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper{
+            position: relative;
+            display: block;
+            text-align: left;
+            margin: 5rem 3rem ;
+            height: auto;
+            width: 50rem;
+        }
+        
+        .submit{
+            background-color: lightgrey;           
+        }
+
+        #send{
+            position:relative;
+            padding-left: 0.5rem;
+            margin: 0.5rem;
+            background-color: antiquewhite;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px #999;
+        }
+
+        .send: active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        #messageContainer{
+            display: flex;
+        }
+
+        #duplicateField{
+            display: block;
+            height: auto;
+            width: auto;
+            margin-left:10px;
+        }
+        #message{
+            display: block;
+            height: 2rem;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#">
+        <label>
+            Текст
+            <input type="text" placeholder="Введите текст">
+        </label>
+        <button id="send" type="submit">
+            Вывести текст в консоль и удалить из формы
+        </button>
+    </form>
+    <hr>
+        <div id="messageContainer">
+        <p id="message">Введенный текст:</p>
+        <p id="duplicateField"></p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
